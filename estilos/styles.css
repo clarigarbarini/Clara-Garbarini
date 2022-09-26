@@ -1,3 +1,8 @@
+:root {
+    --footer-color: #8653ff;
+    --header-color: #e7bc7b;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -21,8 +26,15 @@
 
 .sub-menu li a {
     text-decoration: none;
-    color: #8653ff;
+    color: var(--footer-color);
     font: 18px "Ubuntu", sans-serif;
+}
+
+.sub-menu li a:hover {
+    color: #fff;
+}
+.sub-menu li:hover {
+    transform: scale(1.25);
 }
 
 .logo-container {
@@ -37,7 +49,7 @@
 
 input {
     width: 200px;
-    border: 1px solid #8653ff;
+    border: 1px solid var(--footer-color);
     border-radius: 10px;
     padding: 5px;
     background-color: #fff;
@@ -86,7 +98,12 @@ section {
 }
 
 .card {
-    margin: 1.25em auto;
+    width: 18rem;
+    margin: 1.15em auto;
+}
+
+.card img:hover {
+    transform: scale(1.05);
 }
 
 .card img {
@@ -107,7 +124,7 @@ section {
 }
 
 .footer-container {
-    background-color: #8653ff;
+    background-color: var(--footer-color);
     padding: 0 10vw;
 }
 
